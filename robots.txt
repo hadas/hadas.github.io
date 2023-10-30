@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hadas.github.io/al-folio/sitemap.xml
+Sitemap: https://hadas.github.io/sitemap.xml
