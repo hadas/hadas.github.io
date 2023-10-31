@@ -3,6 +3,7 @@ layout: about
 title: About
 permalink: /
 redirect_from:
+  - /al-folio
   - /al-folio/
 subtitle: Welcome to my website!
 
