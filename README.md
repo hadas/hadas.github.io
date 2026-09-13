@@ -18,32 +18,3 @@ assets/             Logos, portrait, favicon
 robots.txt
 sitemap.xml
 ```
-
-## Editing
-
-Every page is a complete, self-contained HTML document. The `<header>` and
-`<footer>` blocks are intentionally duplicated across the four pages — that is
-the cost of having no build step. When you change one, change all four; they are
-byte-identical apart from the `aria-current="page"` marker on the active tab, so
-a find-and-replace across `*.html` works.
-
-## Assets
-
-`assets/` currently holds neutral **placeholders** so nothing renders broken.
-
-## Local preview
-
-```sh
-python3 -m http.server 8000 --directory .
-# then open http://localhost:8000
-```
-
-Opening the files directly with `file://` works too, but `404.html` and the
-root-relative paths in it only behave correctly over HTTP.
-
-## Publishing
-
-GitHub Pages serves a repository named `<username>.github.io` from the root of
-its default branch, at `https://<username>.github.io/`. The repository must be
-public (on a free plan). Settings → Pages → Source: *Deploy from a branch* →
-`main` / `/ (root)`.
